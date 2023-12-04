@@ -1,15 +1,24 @@
-Source: template-repository
-Section: unknown
+Source: golang-github-fvbommel-sortorder
+Section: devel
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: Thorsten Alteholz <debian@alteholz.de>
+Build-Depends: debhelper-compat (= 13),
+               dh-golang,
+               golang-any
+Standards-Version: 4.5.1
+Homepage: https://github.com/fvbommel/sortorder
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-fvbommel-sortorder
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-fvbommel-sortorder.git
+XS-Go-Import-Path: github.com/fvbommel/sortorder
+Testsuite: autopkgtest-pkg-go
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: golang-github-fvbommel-sortorder-dev
+Architecture: all
+Depends: ${misc:Depends}
+Multi-Arch: foreign
+Description: sort orders and comparison functions
+ This package contains sort orders and comparison functions.
+ .
+ Currently, it only implements so-called "natural order", where integers
+ embedded in strings are compared by value.
