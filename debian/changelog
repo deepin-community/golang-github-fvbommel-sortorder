@@ -1,5 +1,21 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-fvbommel-sortorder (1.0.2-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 12 to 13.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Apply multi-arch hints. + golang-github-fvbommel-sortorder-dev: Add Multi-Arch: foreign.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sat, 26 Nov 2022 13:59:23 +0000
+
+golang-github-fvbommel-sortorder (1.0.2-2) unstable; urgency=medium
+
+  * upload source package
+
+ -- Thorsten Alteholz <debian@alteholz.de>  Fri, 25 Dec 2020 15:59:15 +0000
+
+golang-github-fvbommel-sortorder (1.0.2-1) unstable; urgency=medium
 
   * Initial release
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Thorsten Alteholz <debian@alteholz.de>  Tue, 08 Dec 2020 18:29:29 +0000
